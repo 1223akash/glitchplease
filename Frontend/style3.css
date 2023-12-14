@@ -197,10 +197,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 #nav img {
-  height: 200px;
   margin-right: 50px;
-  height: 75px;
-  width: 120px;
+  width: 200px;
+  height: 146px;
+  padding: 23px;
 }
 
 #nav h4 {
@@ -553,6 +553,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     text-align:center;
+    /* height:75px; */
     width: 45%; /* Adjust the width as needed */
     position:absolute;
     bottom:30%;

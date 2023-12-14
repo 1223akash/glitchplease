@@ -161,10 +161,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 #nav img {
-  height: 200px;
   margin-right: 50px;
-  height: 75px;
-  width: 120px;
+  width: 200px;
+  height: 146px;
+  padding: 23px;
 }
 
 #nav a {
