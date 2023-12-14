@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+*::selection {
+  background-color: #fff;
+  color: #95c11e;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: block;
+  width: 10px;
+  background-color: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #95c11e;
+  border-radius: 10px;
+  /* height: ; */
+}
+
+#nav {
+  height: 145px;
+  width: 100%;
+  /* background-color: green; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 150px;
+  gap: 50px;
+  position: fixed;
+  z-index: 99;
+}
+
+#nav img {
+  height: 200px;
+  margin-right: 50px;
+  height: 75px;
+  width: 120px;
+}
+
+#nav a {
+  text-decoration: none;
+}
+
+#nav h4 {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-right: 70px;
+}
+
+#nav button {
+  display: inline-block;
+  color: #000;
+  width: 100px;
+  height: 40px;
+  background-color: #fff;
+  text-align: center;
+  border: none;
+}
+
+#nav button:hover {
+  cursor: pointer;
+  border: 1px solid green;
+  background-color: #b1afaf;
+}
+
+#cursor {
+  width: 20px;
+  height: 20px;
+  background-color: #95c11e;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 99;
+  transition: all linear 0.1s;
+}
+
+#cursor-blur {
+  width: 500px;
+  height: 500px;
+  background-color: rgba(150, 193, 30, 0.199);
+  border-radius: 50%;
+  position: fixed;
+  filter: blur(40px);
+  z-index: 9;
+  transition: all linear 0.4s;
+}
+
+#main {
+  position: relative;
+  background-color: #79AC78;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 10;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+
+.bt-box {
+  margin-top: 100px;
+  width: 390px;
+  height: 300px;
+  background-color: rgb(234, 239, 227);
+  font-size: 4vh;
+  font-weight: 700;
+  color: rgb(55, 59, 54);
+  border: none;
+  border-radius: 15px;
+}
+
+.bt-box:hover {
+  cursor: pointer;
+}
+
+#page1 h1 {
+  font-size: 93px;
+  font-weight: 900;
+  position: relative;
+  margin-top: 25px;
+}
+
+#page2 {
+  min-height: 100vh;
+  width: 100%;
+  z-index: 10;
+}
+
+#scroller {
+  /* background-color: red; */
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+#scroller::-webkit-scrollbar {
+  display: none;
+}
+
+#scroller-in {
+  display: inline-block;
+  white-space: nowrap;
+  animation-name: scroll;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#scroller h4 {
+  display: inline-block;
+  font-size: 95px;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  transition: all linear 0.1s;
+  color: black;
+  margin-right: 10px;
+  -webkit-text-stroke: 2px #fff;
+}
+
+#scroller h4:hover {
+  color: #aee123;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translate(-100%);
+  }
+}
+
+#about-us {
+  margin-top: 75px;
+  height: 40vh;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 50px;
+  position: relative;
+  z-index: 10;
+}
+
+#about-us img {
+  height: 220px;
+  width: 220px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+#about-us-in {
+  width: 40%;
+  text-align: center;
+}
+
+#about-us-in h3 {
+  font-size: 37px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+#about-us-in p {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+#cards-container {
+  margin-top: 70px;
+  /* background-color: red; */
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  position: relative;
+  z-index: 10;
+}
+
+.card {
+  height: 50%;
+  width: 25%;
+  /* background-color: blue; */
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: all ease 0.6s;
+}
+
+
+
+#card1 {
+  background-image: url(https://savioursfoundation.org/wp-content/uploads/2021/06/836844-jivan-sandhya-old-age-home-768x432.jpg);
+}
+
+#card2 {
+  background-image: url(https://savioursfoundation.org/wp-content/uploads/2021/06/op-4-main.869x568.869x568-768x502.jpg);
+}
+
+#card3 {
+  background-image: url(https://savioursfoundation.org/wp-content/uploads/2021/06/1532794836-9741.jpg);
+}
+
+#page3 {
+  height: 40vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#page3 > p {
+  font-size: 23px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  width: 60%;
+  line-height: 37px;
+}
+
+#page3 img {
+  position: absolute;
+  height: 60px;
+}
+
+#colon1 {
+  left: 14%;
+  top: 25%;
+}
+
+#colon2 {
+  bottom: 25%;
+  right: 15%;
+}
+
+#footer {
+  margin-top: 65px;
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(to left bottom, #119f3a, #aee123);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 23vw;
+  padding: 0 70px;
+  /* z-index: 99; */
+}
+
+#footer > img {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  z-index: 0;
+}
+
+#f1 img {
+  width: 250px;
+  height: 200px;
+}
+
+#f1,
+#f2,
+#f4 {
+  width: fit-content;
+  position: relative;
+  z-index: 99;
+  /* background-color: red; */
+}
+
+#f2 h3 {
+  font-size: 23px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 900;
+  line-height: 39px;
+  margin-right: 45px;
+}
+
+#f2 h3:hover,
+#f4 h3:hover {
+  color: #fff;
+}
+
+
+#f4 h4 {
+  font-size: 16px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+#f4 h4 span {
+  color: #000;
+  font-weight: bold;
+}
+
+#f4 h3 {
+  margin-top: 4px;
+  color: #000;
+  font-weight: 900;
+}
