@@ -1,5 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap");
 
+.donate {
+  all: unset;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.6em 2em;
+  border: mediumspringgreen solid 0.15em;
+  border-radius: 0.25em;
+  color: mediumspringgreen;
+  font-size: 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
+}
+
+.donate p {
+  z-index: 1;
+}
+
+.donate:hover {
+  color: #212121;
+}
+
+.donate:active {
+  border-color: teal;
+}
+
+.donate::after, .donate::before {
+  content: "";
+  position: absolute;
+  width: 9em;
+  aspect-ratio: 1;
+  background: mediumspringgreen;
+  opacity: 50%;
+  border-radius: 50%;
+  transition: transform 500ms, background 300ms;
+}
+
+.donate::before {
+  left: 0;
+  transform: translateX(-8em);
+}
+
+.donate::after {
+  right: 0;
+  transform: translateX(8em);
+}
+
+.donate:hover:before {
+  transform: translateX(-1em);
+}
+
+.donate:hover:after {
+  transform: translateX(1em);
+}
+
+.donate:active:before,
+.donate:active:after {
+  background: teal;
+}  
+
 * {
   margin: 0;
   padding: 0;
@@ -94,7 +157,7 @@ body::-webkit-scrollbar-thumb {
 
 #main {
   position: relative;
-  background-color: #79AC78;
+  /* background-color: #79AC78; */
 }
 
 #page1 {
@@ -107,6 +170,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   text-align: center;
   z-index: 10;
+  background: linear-gradient(to left bottom, #119f3a, #aee123);
 }
 
 #container {
@@ -139,6 +203,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 900;
   position: relative;
   margin-top: 25px;
+
 }
 
 #page1 h1::before {
