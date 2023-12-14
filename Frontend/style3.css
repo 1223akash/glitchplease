@@ -330,7 +330,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 #f1 img {
-  height: 90px;
+  width: 250px;
+  height: 200px;
 }
 
 #f1,
