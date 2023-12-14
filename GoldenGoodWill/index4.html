@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoldenGoodwill</title>
+    <link
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="nav">
+      <img
+        src="/svg'/logo1.png"
+        alt=""
+      />
+      <h4><a href="index.html">Home</a></h4>
+      <h4><a href="">Register</a></h4>
+      <!-- <h4>Adventure GOlf</h4> -->
+      <h4><a href="">Contact Us</a></h4>
+      <a href=""><button>Donate</button></a>
+    </div>
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+    <div id="main">
+      <div id="page1">
+        <div class="login-container">
+            <div class="login-form">
+              <h2 style="color: black;">Donate Money</h2>
+              <form id="loginForm">
+                <label for="username">Name:</label>
+                <input type="text" id="username" name="username" required>
+        
+                <label for="email">UPI ID:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter 10-digit phone number" required>
+        
+                <label for="password">PIN:</label>
+                <input type="password" id="password" name="password" required>
+        
+              </form>
+            </div>
+        
+            <div class="services-section">
+              <h3 style="color: black;">Want to donate anything else?</h3>
+              <form id="servicesForm">
+                <div class="checkbox-container">
+                  <input type="checkbox" id="service1" name="services" value="Service 1">
+                  <label for="service1">Clothes</label>
+                </div>
+        
+                <div class="checkbox-container">
+                  <input type="checkbox" id="service2" name="services" value="Service 2">
+                  <label for="service2">Beds/Linen</label>
+                </div>
+        
+                <!-- Repeat for services 3 to 10 -->
+        
+                <div class="checkbox-container">
+                  <input type="checkbox" id="service3" name="services" value="Service 3">
+                  <label for="service3">Assistive Devices</label>
+                </div>
+    
+    
+                <div class="checkbox-container">
+                  <input type="checkbox" id="service4" name="services" value="Service 4">
+                  <label for="service4">Entertainment Items</label>
+                </div>
+    
+    
+                <div class="checkbox-container">
+                  <input type="checkbox" id="service5" name="services" value="Service 5">
+                  <label for="service5">Home Supplies</label>
+                </div>
+    
+    
+                <div class="checkbox-container">
+                  <input type="checkbox" id="service6" name="services" value="Service 6">
+                  <label for="service6">Other</label>
+                </div>
+        
+            
+              </form>
+            </div>
+          </div>
+          <div id="login">
+            <br>
+          <center><button type="button" onclick="submitForm()">Login</button></center>
+          </div>
+      </div>
+      <div id="page2">
+        <div id="about-us">
+          <div id="about-us-in">
+            <h3>ABOUT US</h3>
+            <p>
+              Welcome to Golden Goodwill Connections, uniting hearts across generations and abilities. We go beyond practical assistance, considering shared interests and cultural backgrounds. Our platform fosters genuine connections between volunteers and seniors, as well as individuals with disabilities. Join us in creating a community where kindness knows no bounds, making every connection meaningful.
+            </p>
+          </div>
+        </div>
+        <div id="cards-container">
+          <div class="card" id="card1">
+            
+          </div>
+          <div class="card" id="card2">
+            
+          </div>
+          <div class="card" id="card3">
+            
+          </div>
+        </div>
+      </div>
+      <div id="page3">
+        <p>
+          Reviews
+        </p>
+        <img
+          id="colon1"
+          src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-left.svg"
+          alt=""
+        />
+        <img
+          id="colon2"
+          src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-right.svg"
+          alt=""
+        />
+      </div>
+      <div id="footer">
+        <div id="f1">
+          <!-- logo -->
+          <img
+            src="/svg'/logo1.png"
+            alt=""
+          />
+        </div>
+        <div id="f2">
+          <h3>Our Journey</h3>
+          <h3>Reviews</h3>
+          <h3>Our Sponsors</h3>
+        </div>
+        <div id="f4">
+          <!-- address -->
+          <h4>
+            A20, SIDCUP BYPASS <br />
+            CHISLEHURST <br />
+            KENT <br />
+            BR7 6RP <br />
+            TEL: <span>0208 309 0181</span> <br />
+          </h4>
+          <!-- <h3>GET DIRECTIONS</h3> -->
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
