@@ -13,15 +13,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Sync Files to S3
-        uses: jakejarvis/s3-sync-action@master
-        with:
-          args: --acl public-read --follow-symlinks --delete
+      - name: Sync ONLY CONTENTS of Frontend to S3 root
+        run: aws s3 sync Frontend s3://ngo-website-cicd/ --delete --acl public-read
         env:
-          AWS_S3_BUCKET: 'ngo-website-cicd'   # your S3 bucket name
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: "ap-south-1"
-          SOURCE_DIR: '.'
-   # folder containing your HTML/CSS/JS
-
